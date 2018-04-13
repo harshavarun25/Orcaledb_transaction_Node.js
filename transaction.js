@@ -46,7 +46,7 @@ return new Promise(function(resolve, reject) {
           console.log(result);
         }); //returns a promise
       },function sixthAction() {
-        return connection.execute("insert into creditcard_charges (user_id, cc_name, cc_no, cc_type, cc_exp_date, cvv_number, chrg_date, chrg_amnt, chrg_pnref, chrg_rslt, chrg_respmsg, chrg_authcode, cc_charge_status, currency, base_amnt, trans_chrg, chrg_ref, chrg_src_type, chrg_pending) VALUES (100012682, 'Harsha', 'XXXXXXXXXXXX1111', 'DISCOVER', '0920', '120', sysdate, '13.10', 'V79E0ACF096C', 0, 'Approved', '010101', 'S', 'USD', '13.10', '0', '9961515844', 'CC', '')", function(err,result){
+        return connection.execute("insert into creditcard_charges (user_id, cc_name, cc_no, cc_type, cc_exp_date, cvv_number, chrg_date, chrg_amnt, chrg_pnref, chrg_rslt, chrg_respmsg, chrg_authcode, cc_charge_status, currency, base_amnt, trans_chrg, chrg_ref, chrg_src_type, chrg_pending) VALUES ()", function(err,result){
           console.log(result);
         }); //returns a promise
       },function seventhdAction() {
